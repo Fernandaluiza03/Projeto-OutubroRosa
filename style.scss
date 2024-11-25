@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap');
+
+$primary-color: #FF69B4;
+$secondary-color: #E4EEF1;
+$hover-color: #c70968;
+$font-family: 'Noto Sans', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: $font-family;
+}
+
+body {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.36;
+    text-align: left;
+    background-color: #E4EEF1;
+    color: #333;
+}
+
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#FF69B4;
+    color: #E4EEF1;
+    transition: background-color 0.3s ease-in-out;
+    
+     header{
+        background-color: #c70968
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        width: 40%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                color: #E4EEF1;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.sessaoPrevencao {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFD9EC;
+
+    p {
+        width: 40%;
+        font-size: 25px;
+    }
+    img {
+        border-radius: 8px;
+    }
+}
+
+.sessaoCorrida {
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FF69B4
+
+    p {
+        width: 50%;
+        font-size: 25px;
+        color: #E4EEF1
+    }
+    img {
+        border-radius: 8px;
+    }
+}
+
+
+.sesaoconcientizacao {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: #FFD9EC;
+        
+    }
+
+.sessaoconcientizacao{
+        flex: 1;
+        margin: 10px;
+        max-width: calc(25% - 20px);
+        box-sizing: border-box;
+        }
+    
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #FF69B4;
+    color: #E4EEF1;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+
+
+    .redesSociais {
+        display: flex;
+        gap: 1rem;
+
+        img {
+            width: 30px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 1rem 0;
+
+        nav {
+            width: 95%;
+
+            ul {
+                flex-direction: column;
+
+                a {
+                    font-size: 22px;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+
+    .sessaoPrevencao, .sessaoCorrida {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+
+        p {
+            width: 90%;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .concientizacao {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+
+        img {
+            width: 30%;
+            height: auto;
+        }
+    }
+
+    footer {
+        flex-direction: column;
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .redesSociais {
+            justify-content: center;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 18px
+    }
+    header {
+        padding: 0.5rem 0;
+    }
+    .sessaoPrevencao p,.sessaoCorrida p {
+        font-size: 18px;
+    }
+    .sessaoconcientizacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sessaoconcientizacao .sessaoconcientizacao{
+        max-width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    footer{
+        padding: 0.5rem;
+    }
+}
+
+    
+    
+    
+
+
+  
+      
+
+    
+        
+    
+
+
